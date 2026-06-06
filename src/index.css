@@ -14,12 +14,20 @@
   }
 }
 
+/* Ensure your font-face uses a relative path if local */
+@font-face {
+  font-family: 'Quincy CF';
+  src: url('fonts/QuincyCF-Regular.woff2') format('woff2'); /* Adjust this path relative to the CSS file location */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
   background: linear-gradient(135deg, #ffe6f0, #fff5ee);
   color: #ffffff;
-  font-family: "Quincy CF", serif;
+  font-family: var(--font-quincy);
 }
 
 /* Custom Webkit scrollbar for the playlist */
