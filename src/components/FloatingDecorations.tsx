@@ -21,7 +21,7 @@ export default function FloatingDecorations() {
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
       {/* Snoopy placeholders */}
       <motion.img
-        src="/images/snoopy1.png.png"
+        src="images/snoopy1.png.png"
         alt="Snoopy"
         className="absolute w-28 top-[8%] left-[5%] opacity-90 hover:opacity-100 hover:scale-110 drop-shadow-xl transition-all duration-300 z-30"
         animate={{ y: [0, -10, 0] }}
@@ -34,7 +34,7 @@ export default function FloatingDecorations() {
       />
 
       <motion.img
-        src="/images/snoopy3.png.png"
+        src="images/snoopy3.png.png"
         alt="Snoopy 3"
         className="absolute w-28 bottom-[15%] left-[3%] opacity-90 hover:opacity-100 hover:scale-110 drop-shadow-xl transition-all duration-300 z-30"
         animate={{ y: [0, -15, 0] }}
