@@ -9,20 +9,20 @@ interface Song {
 const playlist: Song[] = [
   {
     name: "Cherry Wine - Grent Perez",
-    path: "/music/grentperez - Cherry Wine (Official Lyric Video) 4.mp3",
+    path: "music/grentperez - Cherry Wine (Official Lyric Video) 4.mp3",
   },
-  { name: "Flowerbed", path: "/music/flowerbed.mp3" },
+  { name: "Flowerbed", path: "music/flowerbed.mp3" },
   {
     name: "Love Between - Kali Uchis",
-    path: "/music/Kali Uchis - Love Between… (Lyrics).mp3",
+    path: "music/Kali Uchis - Love Between… (Lyrics).mp3",
   },
   {
     name: "This Woman's Work - Maxwell",
-    path: "/music/This Woman's Work (Uncut) by Maxwell (Lyrics).mp3",
+    path: "music/This Woman's Work (Uncut) by Maxwell (Lyrics).mp3",
   },
   {
     name: "Underneath the Mistletoe",
-    path: "/music/Underneath the Mistletoe.mp3",
+    path: "music/Underneath the Mistletoe.mp3",
   },
 ];
 
@@ -56,8 +56,6 @@ export default function MusicPlayer() {
       });
     }
 
-    // Modern browsers block autoplay without user interaction.
-    // Listen for the first touch or click to start playing automatically.
     window.addEventListener("click", handleInitialPlay, { once: true });
     window.addEventListener("touchstart", handleInitialPlay, { once: true });
 
@@ -122,7 +120,7 @@ export default function MusicPlayer() {
 
   const handleError = () => {
     console.warn(
-      `Could not load local file: ${playlist[currentSongIndex].path}. Please upload the file to /public/music/.`,
+      `Could not load local file: ${playlist[currentSongIndex].path}. Please ensure it is in the /music/ folder relative to your site root.`,
     );
     setIsPlaying(false);
   };
@@ -189,7 +187,6 @@ export default function MusicPlayer() {
         </div>
       </div>
 
-      {/* Progress Bar */}
       <div className="mb-6 flex flex-col gap-1 text-sm text-zinc-400">
         <input
           type="range"
