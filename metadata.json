@@ -1,0 +1,6 @@
+{
+  "name": "Joanna 10 Months Anniversary",
+  "description": "A romantic anniversary slide show and music player.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
