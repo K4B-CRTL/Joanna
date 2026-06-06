@@ -32,7 +32,7 @@ export default function DashboardScreen() {
             I love you! ❤️ - K.B
           </p>
           <motion.img
-            src="/images/snoopy1.png.png"
+            src="images/snoopy1.png.png"
             alt="Snoopy Heart"
             className="w-16 mt-2 opacity-90 drop-shadow-md z-10"
             animate={{ scale: [1, 1.05, 1], rotate: [0, 5, -5, 0] }}
